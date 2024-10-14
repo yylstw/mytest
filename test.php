@@ -27,7 +27,7 @@ class Shell {
         $os = PHP_OS;
         if (stripos($os, 'LINUX') !== false || stripos($os, 'DARWIN') !== false) {
             $this->os    = 'LINUX';
-            $this->shell = '/bin/sh';
+            $this->shell = '/bin/bash';
         } else if (stripos($os, 'WINDOWS') !== false || stripos($os, 'WINNT') !== false || stripos($os, 'WIN32') !== false) {
             $this->os    = 'WINDOWS';
             $this->shell = 'cmd.exe';
